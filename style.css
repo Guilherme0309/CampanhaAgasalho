@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #112553, #0E71C2);
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #112553;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.menu li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #101386;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  padding: 60px 20px;
+  margin: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section-index {
+  background-color: rgba(255, 255, 255, 0.15);
+  text-align: center;
+  margin: 30px 30px;
+  padding: 100px 10px;
+  border-radius: 12px;
+}
+
+.section-index h2 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+
+.section-index p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+  background-color: #FFFFFF;
+  color: #112553;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+button {
+  padding: 12px;
+  background-color: #101386;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0e0c73;
+}
+
+footer {
+  background-color: #112553;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 20px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+
+.container img{
+ border-radius: 10px;
+}
+
+.card {
+  background-color: #4f7bc7;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px #c6c6c6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 17px;
+  }
+
+  .section-index {
+    padding: 70px 10px;
+  }
+
+  .section-index h2 {
+    font-size: 2rem;
+    }
+
+    .section-index p {
+      font-size: 1rem;
+    }
+
+    .card {
+      width: 200px;
+    }
+
+  footer {
+    padding: 15px;
+    font-size: small;
+  }
+  
+}
