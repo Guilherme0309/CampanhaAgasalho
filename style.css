@@ -10,6 +10,7 @@ body {
   background: linear-gradient(to bottom, #112553, #0E71C2);
   color: #FFFFFF;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 header {
@@ -193,6 +194,8 @@ footer {
     }
 
   footer {
+    position: sticky;
+    top: 100vh;
     padding: 15px;
     font-size: small;
   }
